@@ -25,14 +25,14 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey("a")){
             
-            sideToSide.Play();
             rigidBody.AddForce(-sideMovement * Time.deltaTime, 0, 0);
+             sideToSide.Play();
         }
 
         if (Input.GetKey("d")){
 
-            sideToSide.Play();
             rigidBody.AddForce(sideMovement * Time.deltaTime, 0, 0);
+             sideToSide.Play();
         }
 
         if (Input.GetKeyDown(KeyCode.Space)){
